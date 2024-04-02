@@ -11,8 +11,8 @@ function cutestCat(cats) {
 
   while (i < cats.length) {
     const cat = cats[i];
-    if (cat > cutest) {
-      cutest = cat.cuteness;
+    if (cutest === undefined || cat.cuteness > cutest.cuteness) {
+      cutest = cat;
     }
     i++;
   }
